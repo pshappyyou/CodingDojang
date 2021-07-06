@@ -6,14 +6,23 @@
 
 num = int(input("Enter the number: "))
 
+# def fibo(n):
+#     if n == 0 :
+#         return 0
+#     elif n == 1:
+#         return n
+#     else:
+#         return n+ fibo(n-1)
+
+
+## when fibonachi is 1,1,2,3,5
 def fibo(n):
     if n == 0 :
         return 0
     elif n == 1:
         return n
     else:
-        return n+ fibo(n-1)
-
+        return fibo(n-1)+ fibo(n-2)
 
 if __name__ == '__main__':
     print(fibo(num))
